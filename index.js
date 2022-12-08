@@ -29,6 +29,13 @@
 
 
 var valorSaque = Number.parseInt(prompt('Digite o valor que deseja sacar: '));
+
+while( valorSaque <= 0 ) {
+  
+  alert('Valor invalido');
+  valorSaque = Number.parseInt(prompt('Digite o valor que deseja sacar: '));
+  
+}
 document.write('Valor do saque foi de: ' + valorSaque, '<br>');
 
 var growCoins = [50, 10, 5, 1];
@@ -38,13 +45,16 @@ for(let i = 0; i < growCoins.length; i++){
 
   let totalGc = parseInt(valorSaque / growCoins[i]);
   valorSaque %= growCoins[i];
-
+  
   if(totalGc !== 0){
     document.write(`${totalGc} growCoins de ${growCoins[i]},00 <br>`);
-  }
+  } 
   
-
-
 }
 
 
+
+
+
+
+    // console.log('o valor é ' + growCoins);

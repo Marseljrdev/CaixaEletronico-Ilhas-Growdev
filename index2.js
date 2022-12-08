@@ -28,6 +28,7 @@
 // GC$ 1,00 -> 2
 
 
+
 function getValorSaque() {
 
   let valorSaque = Number.parseInt(prompt('Digite o valor que deseja sacar: '));
